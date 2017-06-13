@@ -11,9 +11,9 @@ Check unused tags, you can choose to search for unused tags in the scene or in t
 
 Options?
 
--Search only in the scene or project.
--Create or not a .txt file with tags.
--Show or not the standard Unity tags.
+Search only in the scene or project.
+Create or not a .txt file with tags.
+Show or not the standard Unity tags.
 
 How to use?
 
