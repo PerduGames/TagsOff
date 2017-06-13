@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 
-public class OffTags : MonoBehaviour {
+public class TagsOff : MonoBehaviour {
 
 	//////////////////////////////////////
 	//Script by PerguGames
