@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEditor;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ public class TagsOff : MonoBehaviour {
 	//GitHub:https://github.com/PerduGames
 	//////////////////////////////////////
 
-	 /*
+	/*
 	Script para encontrar as tags não utilizadas na cena 
 	ou em todo projeto, recebendo seus nomes no Console ou
 	criando arquivo .txt com as tags não utilizadas.
@@ -21,6 +21,9 @@ public class TagsOff : MonoBehaviour {
 	- Para atualizar o arquivo .txt criado na Unity, minimize a Unity ou de um Refresh que atualiza.
 	- Ouvi dizer que este por ser um recurso interno pode quebrar em futuras versões:
 	"UnityEditorInternal.InternalEditorUtility.tags"
+	-No modo pesquisa para pesquisar somente na cena(true), apenas pesquisa objetos ativos, caso esteja
+	usando uma versão antiga da Unity, apenas mude onde houver "FindObjectsOfType" para "FindObjectsOfTypeAll",
+	assim também pesquisará em objetos inativos na cena.
 	*/
 
 	//Bool para pesquisar dentro da cena ou do projeto inteiro
@@ -59,7 +62,7 @@ public class TagsOff : MonoBehaviour {
 			}
 			//Evitar as tags e gerar arquivo
 			gerar ();
-		//Pesquisar em todo projeto
+			//Pesquisar em todo projeto
 		}else if(ModoPesquisa == false){
 			//Criar lista de GameObject para os prefabs
 			List<GameObject> listaPrefabs = new List<GameObject>();
